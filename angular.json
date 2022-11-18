@@ -43,9 +43,13 @@
                   "maximumError": "4kb"
                 }
               ],
+              "outputPath": "../../../public/assets/angular",
+              "deployUrl": "/assets/angular/",
               "outputHashing": "all"
             },
-            "development": {
+            "dev": {
+              "outputPath": "dist/assets/angular",
+              "baseHref": "/assets/angular/",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -62,11 +66,11 @@
             "production": {
               "browserTarget": "buyfood:build:production"
             },
-            "development": {
-              "browserTarget": "buyfood:build:development"
+            "dev": {
+              "browserTarget": "buyfood:build:dev"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -94,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6e7ad2d1-4917-4378-99a5-661529ce7073"
   }
 }

@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-menu {
+     font-family: 'Inter', sans-serif;
+}
+
+/* .nav-menu ul li a  {
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.nav-menu ul li .active{
+ color: #30a575;
+ border-bottom: 3px solid #30a575;
+ padding-bottom: 4px;
+ width: 100%;
+ border-radius: 1px;
+ transition:  0.5s ease;
+}
+
+.nav-menu ul li :hover{
+    color: #30a575;
+} */
+.btn {
+    display: inline-block;
+    transition: 0.5s ease;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover {
+    color: #30a575;
+    border-bottom: 3px solid #30a575;
+    padding-bottom: 4px;
+    width: 100%;
+    border-radius: 1px;
+    transition:  0.5s ease;
+  }
+
+  .title-home {
+    font-size: 80px;
+    color: #091a3d;
+  }
+
+ 

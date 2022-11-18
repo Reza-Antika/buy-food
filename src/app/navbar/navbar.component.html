@@ -1,0 +1,44 @@
+<nav class="nav py-2 px-28 w-full bg-transparent fixed z-30 ">
+    <div class="flex justify-between w-full">
+        <a href="#" class="flex justify-between">
+            <fa-icon class="text-5xl text-emerald-500" [icon] = "faPlateWheat"></fa-icon>
+            <div class="text-2xl ml-4 flex py-2">
+                <h1 class="italic">buy</h1>
+                <h1 class="font-bold">FOOD</h1>
+            </div>
+        </a>
+
+        <div class="nav-menu py-4" id="nav-menu">
+            <ul class="font-bold flex space-x-20 text-cyan-800 text-xl" >
+                <li>
+                    <a routerLink="/home" class="btn active inline-block">Home</a>
+                </li>
+                <li>
+                    <a routerLink="/about" class="btn inline-block">About us</a>
+                </li>
+                <li>
+                    <a routerLink="/features" class="btn inline-block">Features</a>
+                </li>
+                <li>
+                    <a routerLink="/shop" class="btn inline-block">Shop</a>
+                </li>
+                <li>
+                    <a routerLink="/blog" class="btn inline-block">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    var btnContainer = document.getElementById("nav-menu");
+    var btns =  btnContainer.getElementsByClassName("btn");
+
+    for (var i =0; i<btns.length; i++){
+        btns[i].addEventListener('click', function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active");
+            this.className += " active";
+        })
+    }
+</script>
